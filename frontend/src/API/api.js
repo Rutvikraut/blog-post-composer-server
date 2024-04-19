@@ -10,8 +10,8 @@ export const generateData = async (prompt) => {
     timeout: 30000 // Timeout set to 30 seconds (adjust as needed)
   };
   const imgresponse = await axios.post(imgapi, data, axiosConfig)
-  const textresponse=await axios.post(textapi, data, axiosConfig)
   const contentresponse=await axios.post(contentapi, data, axiosConfig)
+  const textresponse=await axios.post(textapi, data, axiosConfig)
   // const [imgresponse, textresponse, contentresponse] = await Promise.all([
   //   axios.post(imgapi, data, axiosConfig),
   //   axios.post(textapi, data, axiosConfig),
