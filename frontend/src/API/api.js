@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 export const generateData = async (prompt) => {
-  const imgapi = "http://localhost:8200/generateimg";
-  const textapi = "http://localhost:8200/generatetitle";
-  const contentapi = "http://localhost:8200/generatecontent";
+  const imgapi = "https://blog-post-composer-server.vercel.app/generateimg";
+  const textapi = "https://blog-post-composer-server.vercel.app/generatetitle";
+  const contentapi = "https://blog-post-composer-server.vercel.app/generatecontent";
 
   const data = { prompt };
   const [imgresponse, textresponse, contentresponse] = await Promise.all([
