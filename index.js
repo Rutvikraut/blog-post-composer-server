@@ -113,7 +113,7 @@ app.get('/', (req, res) => {
 //     // return res.status(200).send("Server is up");
 // });
 
-app.use('/api',contentRoutes)
+// app.use('/api',contentRoutes)
 
 
 const port = process.env.PORT;
