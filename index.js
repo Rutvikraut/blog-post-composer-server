@@ -15,9 +15,9 @@ app.use(express.urlencoded({extended:true}))
 
 const token = new InferenceClient(process.env.HUGGING_FACE_ACCESS_TOKEN)
 
-app.get('/', (req, res) => {
-    return res.status(200).send("Server is up")
-})
+// app.get('/', (req, res) => {
+//     return res.status(200).send("Server is up")
+// })
 
 // app.post('/generateimg', async (req, res) => {
 //     const { prompt } = req.body;
